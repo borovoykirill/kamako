@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Noto Serif', serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 20px;
 }
@@ -31,10 +31,8 @@ img {
     height: auto;
 }
 
-/* hides headers and checkboxes and radio-button */
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+/* hides headers */
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -53,23 +51,19 @@ a {
     color: #000000;
 }
 
-
-
 /* todo banner */
-.banner {
-    visibility: visible;
-    width: 100%;
-    height: 50px;
-    background-color: #0066a1 ;
-}
-
-.content {
+.banner-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
+    visibility: visible;
+    min-width: 1358px; /* For a block with a background that is truncated, we must set the min-width parameter with a value equal to the width of the widest incompressible block.*/
+    height: 50px;
+    background-color: #0066a1;
+    text-overflow: clip;
 }
 
-.content p {
+.banner-wrapper p {
     white-space: nowrap;
     font-style: normal;
     font-weight: 700;
@@ -112,17 +106,20 @@ a {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
 }
 
 .main-navigation figure {
     position: absolute;
-    top: -5px;
+    top: -8px;
     left: 40px;
+    width: 86px;
+    height: 86px;
 }
 
 .site-navigation {
+    padding: 0;
     margin-left: 210px;
     display: flex;
     flex-wrap: nowrap;
@@ -130,14 +127,85 @@ a {
     list-style: none;
 }
 
+.site-navigation li:nth-child(2),
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4),
+.site-navigation li:nth-child(5),
+.site-navigation li:nth-child(6) {
+    padding-left: 29px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    border-bottom: 2px solid #29a7db;
+    color: #29a7db;
+}
+
+ .site-navigation-current a{
+    border-bottom: 2px solid #29a7db;
+    color: #29a7db;
+}
+
 .language-switch {
+    padding: 0;
+    margin-right:140px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     list-style: none;
+    background: url("../img/separator.png") center no-repeat;
 }
 
+.language-current {
+    color: #29a7db;
+}
 
+.language-switch .disabled {
+    opacity: 0.5;
+}
+
+.language-switch-en {
+    padding-left: 8px;
+}
+
+.search-field form {
+    height: 42px;
+}
+.search-field input {
+    height: 100%;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 2;
+    font: inherit;
+    cursor: pointer;
+}
+.search-field input:focus {
+    width: 170px;
+    z-index: 1;
+    border-bottom: 2px solid #dd3300;
+}
+.search-field button {
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 57px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    cursor: pointer;
+}
+.search-field button:before {
+    content: url("../img/magnifying-glass.png");
+}
 
 /* todo slider */
 .features {

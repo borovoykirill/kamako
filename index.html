@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О компании</title>
     <link href="favicon.ico" rel="icon" type="image/x-icon">
     <link href="css/normalize.css" rel="stylesheet">
@@ -11,8 +12,7 @@
 <body>
 <header class="main-header">
 
-    <div class="banner">
-        <div class="content">
+        <div class="banner-wrapper">
             <p> КАМАКО — ведущий производитель майонезов, соусов и кетчупов в Беларуси на протяжении 20 лет</p>
             <a class="banner-close-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="svg-btn-close" width="24" height="24" viewBox="0 0 24 24">
@@ -22,7 +22,7 @@
                 </svg>
             </a>
         </div>
-    </div>
+
 
     <nav class="main-navigation">
         <figure class="main-header-logo">
@@ -31,7 +31,7 @@
             </a>
         </figure>
         <ul class="site-navigation">
-            <li class="site-navigation-current">О компании<a href="index.html"></a></li>
+            <li class="site-navigation-current"><a href="index.html">О компании</a></li>
             <li><a href="products.html">Продукция</a></li>
             <li><a href="charity.html">Благотворительность</a></li>
             <li><a href="news.html">Пресс-центр</a></li>
@@ -40,16 +40,18 @@
         </ul>
         <ul class="language-switch">
             <li class="language-switch-ru">
-                <a class="language-switch-ru">Рус</a>
+                <a class="language-switch-ru language-current">Рус</a>
             </li>
             <li class="language-switch-en">
-                <a class="language-switch-en">Eng</a>
+                <a class="language-switch-en disabled">Eng</a>
             </li>
         </ul>
-        <form action="" method="get">
-            <input name="search" placeholder="Искать здесь..." type="search">
-            <button type="submit">Поиск</button>
-        </form>
+        <div class="search-field">
+            <form>
+                <input type="text" placeholder="Искать здесь...">
+                <button type="submit"></button>
+            </form>
+        </div>
     </nav>
 </header>
 
