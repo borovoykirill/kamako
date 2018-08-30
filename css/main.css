@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .container {
@@ -46,6 +50,7 @@ input[type="radio"].visually-hidden {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #000000;
 }
 
 
@@ -65,49 +70,76 @@ a {
 }
 
 .content p {
-    font-size: 14px;
-    line-height: 20px;
+    white-space: nowrap;
     font-style: normal;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
     color: #ffffff;
 }
 
-.banner-close-button {
+.banner-close-btn {
     margin-left: 12px;
 }
 
-.banner-close-button:hover .cross-1,
-.banner-close-button:focus .cross-1,
-.banner-close-button:hover .cross-2,
-.banner-close-button:focus .cross-2 {
+.banner-close-btn:hover .cross-1,
+.banner-close-btn:focus .cross-1,
+.banner-close-btn:hover .cross-2,
+.banner-close-btn:focus .cross-2 {
     fill: #d9534f;
     stroke: #d9534f;
 }
 
-.banner-close-button:hover .circle,
-.banner-close-button:focus .circle {
+.banner-close-btn:hover .circle,
+.banner-close-btn:focus .circle {
     stroke: #d9534f;
 }
 
-.svg-button-close {
+.svg-btn-close {
     margin-top: 15px;
 }
-
 
 
 /* todo menu-navigation*/
 .main-navigation {
     display: flex;
     justify-content: space-between;
+    position: relative;
     min-height: 75px;
     width:1358px;
     margin: 0 auto;
     padding: 0 10px;
-
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }
 
-/* todo slider */
+.main-navigation figure {
+    position: absolute;
+    top: -5px;
+    left: 40px;
+}
 
+.site-navigation {
+    margin-left: 210px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+}
+
+.language-switch {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+/* todo slider */
 .features {
     height: 450px;
     background-color: #f7ecb5;
