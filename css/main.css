@@ -192,7 +192,7 @@ a {
 .search-field input:focus {
     width: 170px;
     z-index: 1;
-    border-bottom: 2px solid #dd3300;
+    border-bottom: 2px solid #29a7db;
 }
 .search-field button {
     background: transparent;
