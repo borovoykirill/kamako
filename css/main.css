@@ -210,8 +210,13 @@ a {
 }
 
 /* todo slider */
+.ism-slider > ol, .ism-slider > ol > li, .ism-slider > ol > li > img {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-.ism-slider > ol, .ism-slider > ol > li, .ism-slider > ol > li > img { width: 100%; list-style: none; margin: 0; padding: 0; }
 .ism-slider {
     overflow: hidden;
     position: relative;
@@ -324,10 +329,6 @@ a {
 a.ism-image-link .ism-caption, a.ism-caption {
     text-decoration: none;
     font-weight: normal;
-}
-
-a.ism-caption:hover {
-    text-decoration: underline;
 }
 
 .ism-caption-0 {
@@ -573,122 +574,143 @@ a.ism-caption:hover {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
 
-#slider-about .ism-slide-0 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
 #slider-about .ism-slide-1 .ism-caption-0.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
+    -webkit-animation: slidein 0.25s; animation: slidein 0.25s;
 }
 
 #slider-about .ism-slide-1 .ism-caption-1.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
 
-#slider-about .ism-slide-1 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
 #slider-about .ism-slide-2 .ism-caption-0.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
+    -webkit-animation: slidein 0.25s; animation: slidein 0.25s;
 }
 
 #slider-about .ism-slide-2 .ism-caption-1.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
 
-#slider-about .ism-slide-2 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
 #slider-about .ism-slide-0 .ism-caption-0 {
-    font-size: 1.25em;
-    font-family: "Noto Serif", serif;
-    position: absolute; top: 10%;
+    position: absolute;
+    top: 10%;
     left: 38%;
+    font-size: 22px;
+    line-height: 16px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
     border-radius: 8px;
     border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.40);
+    color: #fff;
+    background-color: transparent;
 }
 
 #slider-about .ism-slide-0 .ism-caption-1 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 44%;
-    left: 29%;
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    width: 668px;
+    min-height: 261px;
     border-radius: 4px;
     border: none;
-    color: #000; background-color: rgba(255, 255, 255, 0.70);
-}
-
-#slider-about .ism-slide-0 .ism-caption-2 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+    color: #000;
+    background-color: #f8f8f8;
 }
 
 #slider-about .ism-slide-1 .ism-caption-0 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 10%;
-    left: 5%;
-    border-radius: 4px;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    font-size: 22px;
+    line-height: 16px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+    border-radius: 8px;
     border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+    color: #fff;
+    background-color: transparent;
 }
 
 #slider-about .ism-slide-1 .ism-caption-1 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    width: 668px;
+    min-height: 261px;
     border-radius: 4px;
     border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#slider-about .ism-slide-1 .ism-caption-2 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+    color: #000;
+    background-color: #f8f8f8;
 }
 
 #slider-about .ism-slide-2 .ism-caption-0 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 10%;
-    left: 5%;
-    border-radius: 4px;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    font-size: 22px;
+    line-height: 16px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+    border-radius: 8px;
     border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+    color: #fff;
+    background-color: transparent;
 }
 
 #slider-about .ism-slide-2 .ism-caption-1 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
+    position: absolute;
+    top: 31%;
+    left: 25%;
+    width: 668px;
+    min-height: 261px;
     border-radius: 4px;
     border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+    color: #000;
+    background-color: #f8f8f8;
 }
 
-#slider-about .ism-slide-2 .ism-caption-2 {
-    font-size: 1.25em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
+.ism-caption-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.ism-caption__kitchen-club {
+    margin-top: 40px;
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #fab330;
+}
 
+.ism-caption__content {
+    margin-top: 5px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.ism-caption__btn-learn-more {
+    padding: 10px 30px;
+    width: 190px;
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+    background-color: #fab330;
+    border-radius: 6px;
+    color: #f8f8f8;
+}
+
+.ism-caption__btn-learn-more:hover {
+    color: #29a7db;
+}
