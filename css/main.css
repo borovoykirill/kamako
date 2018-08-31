@@ -405,27 +405,6 @@ a.ism-caption:hover {
     opacity: 1;
 }
 
-p.ism-badge {
-    margin: 0 auto;
-    text-align: right;
-    font-size: 10px;
-    padding-top: 1px;
-    color: #ccc;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-p.ism-badge a.ism-link {
-    color: inherit;
-    text-decoration: none;
-    margin-right: 0.25em;
-}
-
-p.ism-badge a.ism-link:hover {
-    color: #aaa;
-    text-decoration: underline;
-}
-
 .ism-zoom-in {
     -webkit-animation: zoomin 0.81s linear 1;
     animation: zoomin 0.81s linear 1;
@@ -500,10 +479,6 @@ p.ism-badge a.ism-link:hover {
     width: 100%;
     height: 455px;
     border-radius: 0;
-}
-
-#slider-about-ism-badge {
-    width: 1358px;
 }
 
 #slider-about .ism-button {
