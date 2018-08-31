@@ -8,6 +8,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <script src="js/slider.min.js" defer></script>
+
 </head>
 <body>
 <header class="main-header">
@@ -22,7 +24,6 @@
                 </svg>
             </a>
         </div>
-
 
     <nav class="main-navigation">
         <figure class="main-header-logo">
@@ -61,11 +62,22 @@
 
     <section class="features">
         <h2 class="visually-hidden">Особенности</h2>
-        <div class="slider-wrapper">
-
+        <div class="ism-slider" data-play_type="loop" data-image_fx="zoomrotate" id="slider-about">
+            <ol>
+                <li>
+                    <img src="img/sliderFoto1.jpg">
+                    <div class="ism-caption ism-caption-0">Пусть всегда будет вкусно!</div>
+                    <a class="ism-caption ism-caption-1" href="" target="_self" data-delay='200'>Кулираный клуб<br>Создай свой кулинарный шедевр с соусами КАМАКО<br>Узнать больше</a>
+                </li>
+                <li>
+                    <img src="img/sliderFoto2.jpg">
+                </li>
+                <li>
+                    <img src="img/sliderFoto3.jpg">
+                </li>
+            </ol>
         </div>
     </section>
-
 </main>
 
 </body>
